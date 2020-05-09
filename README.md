@@ -1,4 +1,4 @@
-# vue-next-admin
+# vue3-admin-demo
 
 ## Project setup
 ```
