@@ -23,8 +23,6 @@
       </tbody>
     </table>
     <div>总数:{{pageData.total}}</div>
-    <div>activeItem:{{activeItem}}</div>
-    <div>state:{{state.form}}</div>
     <div class="dialog-detail" v-show="isShowDetail">
       <div class="form-item">
         <span class="label">姓名:</span>
