@@ -1,0 +1,32 @@
+{
+    "list": [{
+            "id": 1,
+            "name": "张三",
+            "department": "技术部",
+            "position": "研发",
+            "date": "2020-05-01"
+        },
+        {
+            "id": 2,
+            "name": "李四",
+            "department": "技术部",
+            "position": "产品经理",
+            "date": "2019-12-11"
+        },
+        {
+            "id": 3,
+            "name": "王五",
+            "department": "财务部",
+            "position": "财务主管",
+            "date": "2016-03-28"
+        },
+        {
+            "id": 4,
+            "name": "赵六",
+            "department": "人力资源部",
+            "position": "招聘经理",
+            "date": "2019-10-20"
+        }
+    ],
+    "total": 4
+}
