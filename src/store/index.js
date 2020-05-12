@@ -33,10 +33,11 @@ export default createStore({
       if (!list) {
         return;
       }
-      if (activeIndex) {
+      if (activeIndex !== null) {
         Object.assign(list[activeIndex], item);
       } else {
         list.push(Object.assign({}, item));
+        state.pageData.total ++ ;
       }
       state.activeIndex = null;
     },
@@ -45,6 +46,7 @@ export default createStore({
     },
     DELETE_ITEM(state, index) {
       const {list} = state.pageData;
+      state.pageData.total -- ;
       list.splice(index, 1);
     }
   },

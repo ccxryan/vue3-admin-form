@@ -5,14 +5,16 @@ export const usePageData = (fetchApi, form) => {
   const store = useStore();
   const pageData = computed(() => store.state.pageData);
   const activeIndex = computed(() => store.state.activeIndex);
+
   const activeItem = computed(() => store.getters.activeItem);
-  let isShowDetail = ref(false);
   watch(activeItem, () => {
     if (!activeItem.value) return;
     for (let key in form) {
       form[key] = activeItem.value[key];
     }
   });
+  
+  let isShowDetail = ref(false);
   const editItem = index => {
     isShowDetail.value = true;
     store.dispatch('SET_ACTIVE_ITEM', index);
@@ -43,7 +45,6 @@ export const usePageData = (fetchApi, form) => {
     isShowDetail,
     pageData,
     activeIndex,
-    activeItem,
     editItem,
     addItem,
     confirmItem,
